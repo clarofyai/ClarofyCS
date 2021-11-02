@@ -1,0 +1,42 @@
+Package: ClarofyCS
+Title: This package faciliates the use of the Clarofy API data science library by Interlate
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Matt",
+           family = "Rosinski",
+           role = c("aut","ctb")),
+    person(given = "Alan",
+           family = "Carter",
+           role = c("ctb", "com", "cre"),
+           email = "alan.carter@interlate.com"),
+    person("Octavius Partners Pty Ltd", role = "cph"))
+Description: This package allows users to connect to the Clarofy API to enable 
+    them build real-time machine learning optimisation algorithms.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+Imports: 
+    rlang (>= 0.1.2),
+    magrittr,
+    tibble,
+    dplyr,
+    lubridate,
+    jsonlite,
+    httr,
+    stringr,
+    DT,
+    tidyr,
+    ggplot2,
+    plotly,
+    timetk
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    roxygen2
+VignetteBuilder: knitr
+Config/testthat/edition: 3
