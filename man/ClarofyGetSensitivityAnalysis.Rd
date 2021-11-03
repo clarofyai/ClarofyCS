@@ -16,7 +16,15 @@ Returns the sensitivity estimates from the all-in-one optimisation workflow
 }
 \section{Optimisation Workflow}{
 \itemize{
-\item Returns the sensitivity estimates from the all-in-one optimisation workflow
+\item Returns the sensitivity estimates from the all-in-one optimisation workflow.
+\item The values of each process control variable in the recommendation results is
+used to replace the values of the identical process control variable in the
+original dataset.
+\item The modified dataset is passed into the trained Prediction model and the
+predicted value for the dependent variable is stored.
+\item The percentage contribution of each individual optimised process control
+variable to the overall optimised prediction is returned as sensitivity
+estimates.
 }
 }
 
