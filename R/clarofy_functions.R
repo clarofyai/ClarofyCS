@@ -173,7 +173,12 @@ GetSummaryOfSessionData <- function(id, url) {
   print(paste0("[",Sys.time(),"] /Interlate_Data_Summary"))
   Summary <- jsonlite::fromJSON(summaryInfo)
 
-
+  print(DT::datatable(Summary[[2]], options = list(
+    initComplete = DT::JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'background-color': '#251b29', 'color': '#fff'});",
+      "}")
+  )))
 
 }
 
