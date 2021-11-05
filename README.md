@@ -12,11 +12,10 @@ requests.
 
 ## Installation
 
-You can install the released version of ClarofyCS from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of ClarofyCS from with:
 
 ``` r
-install.packages("ClarofyCS")
+devtools::install_github("clarofy/ClarofyCS")
 ```
 
 ## Example
