@@ -44,7 +44,7 @@ library(ClarofyCS)
 ## Installation
 
 ```{r}
-install.packages("ClarofyCS", repos = "https://github.com/clarofy/ClarofyCS", type="source")
+devtools::install_github("clarofy/ClarofyCS")
 
 ```
 
