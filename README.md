@@ -12,7 +12,7 @@ requests.
 
 ## Installation
 
-You can install the released version of ClarofyCS from with:
+You can install the released version of ClarofyCS with:
 
 ``` r
 devtools::install_github("clarofy/ClarofyCS")
