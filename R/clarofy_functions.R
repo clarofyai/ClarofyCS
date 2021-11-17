@@ -47,7 +47,7 @@ CreateSession <- function(APIKey, url = "http://127.0.0.1:8000") {
 
 
 # # 2.0 IMPORT DATA FUNCTION ----
-# removed this private testing function for public release
+# removed this private testing function for  public release
 
 # # 3.0 LOAD DATAFRAME INTO SESSION FUNCTION ----
 #' Load data into session
