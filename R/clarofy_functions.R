@@ -301,7 +301,7 @@ LoadTestingDataIntoSession <- function(test, url, id) {
 #' @export
 CleanseAllTestingData <- function(Dependent_Variable,
                                   Independent_Variables,
-                                  url, id) {
+                                  url, id, Extreme_Value_Filter = TRUE) {
 
   path <- '/Session/Interlate_Data_Density_Cleansing'
   print(paste0("[",Sys.time(),"] Next Command: ",path))
@@ -309,7 +309,7 @@ CleanseAllTestingData <- function(Dependent_Variable,
   body <- list(
     TimeStamp_Variable_Name = "TimeStamp"
     ,Variables_To_Clean = c(Dependent_Variable, Independent_Variables)
-    ,Extreme_Value_Filter = TRUE
+    ,Extreme_Value_Filter = Extreme_Value_Filter
     ,Density_Filter = TRUE
     ,Left_Peak_Filter = FALSE
     ,Large_Gap_Filter = FALSE
@@ -416,7 +416,6 @@ ClarofyFit <- function(Dependent_Variable,
   print(raw.result$status_code)
 
   return(Model_Trainer_Output)
-
 
 }
 
