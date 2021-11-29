@@ -180,6 +180,8 @@ GetSummaryOfSessionData <- function(id, url) {
       "}")
   )))
 
+  return(Summary)
+
 }
 
 # 5.0 LOAD TRAINING DATA INTO SESSION ----
