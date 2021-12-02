@@ -3,6 +3,7 @@
 export("%>%")
 export(":=")
 export(.data)
+export(CalculateSlurryConversion)
 export(ClarofyEndSession)
 export(ClarofyFinalOptimiseStart)
 export(ClarofyFinalOptimiseStatus)

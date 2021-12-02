@@ -13,5 +13,6 @@ globalVariables(names = c(
   "Data_Predictions_train", "name", "kpi_value", "run_type", "max_value",
   "min_value", "ncol", "Value", "Complete_Optimisation_Results_Tbl", "train",
   "test", "Independent_Variables", "Process_Control_Variables",
-  "Upstream_Forecasting_Variables", "number_clusters", "type"
+  "Upstream_Forecasting_Variables", "number_clusters", "type", "ratio_slurry",
+  "ratio_solid"
 ))

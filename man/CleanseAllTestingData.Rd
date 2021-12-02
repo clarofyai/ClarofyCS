@@ -4,7 +4,13 @@
 \alias{CleanseAllTestingData}
 \title{Cleanse session training data using density cleaning operation}
 \usage{
-CleanseAllTestingData(Dependent_Variable, Independent_Variables, url, id)
+CleanseAllTestingData(
+  Dependent_Variable,
+  Independent_Variables,
+  url,
+  id,
+  Extreme_Value_Filter = TRUE
+)
 }
 \arguments{
 \item{Dependent_Variable}{dependent variable for which you want to predict or optimise}
