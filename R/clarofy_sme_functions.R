@@ -55,6 +55,69 @@ CalculateSlurryConversion <- function(API_Key,
   return(slurry_result)
 }
 
+
+# # Two Product Recovery Calculation ----
+#' Function calculates Feed, concentrate, tail and recovery
+#'
+#' @description
+#' Placeholder
+#'
+#' @param url API url
+#' @param API_Key API key provided
+#' @param feed Value of the feed
+#' @param concentrate Value of the concentrate
+#' @param tail Value of the tail
+#' @param recovery Value of the recovery
+#'
+#'
+#'
+#' @details
+#' # More details
+#' -Bullet 1
+#' -Bullet2
+#'
+#' @examples
+#'
+#' \dontrun{
+#'
+#' CalculateTwoProductRecovery(API_Key = API_Key,
+#'                                   url = url,
+#'                                  feed = 0.7,
+#'                           concentrate = 25,
+#'                                  # tail= 0.02,
+#'                              recovery = 0.9722)
+#'
+#'
+#' }
+#'
+#' @export
+
+
+CalculateTwoProductRecovery <- function(API_Key,
+                                        url,
+                                        feed = NULL,
+                                        concentrate = NULL,
+                                        tail= NULL,
+                                        recovery= NULL) {
+
+  path <- 'SME/SME_rec2prod'
+
+
+  body <- list(
+    API_Key = API_Key
+    ,feed = feed
+    ,concentrate = concentrate
+    ,tail = tail
+    ,recovery = recovery
+  )
+
+  raw.result <- httr::POST(url = url, path = path, body = body, encode = 'json')
+  recovery <- jsonlite :: fromJSON(rawToChar(raw.result$content))
+
+  return(recovery)
+}
+
+
 # Test code
 # p_liquid_test <- CalculateSlurryConversion(API_Key = API_Key,
 #                           url = url,
