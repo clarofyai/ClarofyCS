@@ -14,6 +14,8 @@ CalculateSlurryConversion(
 )
 }
 \arguments{
+\item{API_Key}{API key provided}
+
 \item{url}{API url}
 
 \item{p_liquid}{Density of the liquid}
@@ -22,9 +24,7 @@ CalculateSlurryConversion(
 
 \item{p_slurry}{Density of the solid}
 
-\item{APIKey}{API key provided}
-
-\item{ratio_slurry}{Solid percent ratio}
+\item{ratio_solid}{Solid percent ratio}
 }
 \description{
 Placeholder description

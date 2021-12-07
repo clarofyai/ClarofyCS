@@ -279,6 +279,7 @@ LoadTestingDataIntoSession <- function(test, url, id) {
 #' @param Dependent_Variable dependent variable for which you want to predict or optimise
 #' @param url API url
 #' @param id Session id created by [CreateSession]
+#' @param Extreme_Value_Filter logical value
 #'
 #' @details
 #' # Optimisation Workflow

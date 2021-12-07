@@ -5,11 +5,11 @@
 #' Placeholder description
 #'
 #' @param url API url
-#' @param APIKey API key provided
+#' @param API_Key API key provided
 #' @param p_liquid Density of the liquid
 #' @param p_solid Density of the solid
 #' @param p_slurry Density of the solid
-#' @param ratio_slurry Solid percent ratio
+#' @param ratio_solid Solid percent ratio
 #'
 #' @details
 #' # More details

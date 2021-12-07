@@ -20,6 +20,8 @@ CleanseAllTestingData(
 \item{url}{API url}
 
 \item{id}{Session id created by \link{CreateSession}}
+
+\item{Extreme_Value_Filter}{logical value}
 }
 \description{
 Cleanse training data using density cleansing operation
